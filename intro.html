@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to CSS</title>
+    <link rel="stylesheet" href="intro.css" />
   </head>
   <body>
     <h1>CSS- Cascading Styles Sheets</h1>
@@ -57,16 +58,31 @@
     <ul>
       <li>
         <h3>Inline CSS</h3>
-        <p></p>
+        <p style="color: red">
+          We use the style element on individual elements.(Code is less reusable
+          ) and makes maintaining the application difficult
+        </p>
       </li>
       <li>
-        <h3>Inline CSS</h3>
-        <p></p>
+        <h3>Internal CSS</h3>
+        <p>
+          Using the style element .(Doing styles within same files as structure
+          is not recommended.Styles won't be shared to other HTML pages.)
+        </p>
       </li>
       <li>
         <h3>External CSS (Recommended)</h3>
-        <p></p>
+        <p>
+          Using a different file ( .css) linked to the html page using the link
+          elementusually placed in the head of a html page.
+        </p>
       </li>
     </ul>
+    <style>
+      p {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
   </body>
 </html>
